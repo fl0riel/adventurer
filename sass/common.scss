@@ -1,0 +1,67 @@
+@import "variables.scss";
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  font-family: "Roboto Condensed", "Tahoma", "Geneva", sans-serif;
+  color: $main-color;
+  background-color: $main-bg;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 150px;
+  padding: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  font-family: "Roboto Condensed", "Tahoma", "Geneva", sans-serif;
+  color: $button-color;
+  text-align: center;
+  text-transform: uppercase;
+  word-wrap: break-word;
+  background-color: $button-bg;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: saturate($button-bg, 20%);
+  }
+
+  &:active {
+    color: rgba($button-color, 0.3);
+    background-color: darken($button-bg, 10%);
+  }
+}

@@ -1,0 +1,24 @@
+@import "../variables.scss";
+
+.page-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 25px 0;
+
+  &__logo {
+    display: flex;
+    width: 186px;
+    height: 25px;
+    fill: $logo-color;
+
+    &[href]:hover,
+    &[href]:focus {
+      fill: saturate($logo-color, 25%);
+    }
+
+    &[href]:active {
+      fill: desaturate($logo-color, 25%);
+    }
+  }
+}
