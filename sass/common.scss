@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  color: $link-color;
+  color: $main-title-color;
   text-decoration: none;
 }
 
@@ -48,20 +48,20 @@ a {
   font-size: 16px;
   line-height: 1;
   font-family: "Roboto Condensed", "Tahoma", "Geneva", sans-serif;
-  color: $button-color;
+  color: $main-second-color;
   text-align: center;
   text-transform: uppercase;
   word-wrap: break-word;
-  background-color: $button-bg;
+  background-color: $main-active-color;
   cursor: pointer;
 
   &:hover,
   &:focus {
-    background-color: saturate($button-bg, 20%);
+    background-color: saturate($main-active-color, 20%);
   }
 
   &:active {
-    color: rgba($button-color, 0.3);
-    background-color: darken($button-bg, 10%);
+    color: rgba($main-second-color, 0.3);
+    background-color: darken($main-active-color, 10%);
   }
 }

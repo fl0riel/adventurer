@@ -17,7 +17,7 @@
     //
 
     &--active a {
-      color: $active-link-color;
+      color: $main-active-color;
     }
   }
 
@@ -30,12 +30,12 @@
 
     &[href]:hover,
     &[href]:focus {
-      border-bottom: 2px solid $link-color;
+      border-bottom: 2px solid $main-title-color;
     }
 
     &[href]:active {
-      color: lighten($link-color, 25%);
-      border-bottom-color: lighten($link-color, 25%);
+      color: lighten($main-title-color, 25%);
+      border-bottom-color: lighten($main-title-color, 25%);
     }
   }
 }

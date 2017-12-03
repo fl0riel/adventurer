@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .progress {
-  width: 45%;
+  width: 50%;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -9,10 +9,10 @@
   &__item {
     margin-bottom: 25px;
     font-size: 16px;
-    color: $about-color;
+    color: $main-second-color;
     background-color: $about-item-bg;
     border-radius: 2px;
-    box-shadow: inset 0 0 0 1px (lighten($services-title-bg, 50%));
+    box-shadow: inset 0 0 0 1px (lighten($main-title-color, 50%));
 
     &--web-design > .progress__scale {
       width: 80%;
@@ -41,7 +41,7 @@
 
   &__scale {
     padding: 10px 20px;
-    background-color: $about-active-bg;
-    border-radius: 2px;
+    background-color: $main-active-color;
+    border-radius: 2px 0 0 2px;
   }
 }
