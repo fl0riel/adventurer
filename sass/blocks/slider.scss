@@ -1,4 +1,18 @@
 .slider {
+  overflow: hidden;
+
+  &__toggle {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    width: 300%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   &__item {
     display: none;
 

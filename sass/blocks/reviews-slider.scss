@@ -1,11 +1,12 @@
 @import "../variables.scss";
 
 .reviews-slider {
-  //
+  overflow: hidden;
 
   &__item {
-    //display: flex;
+    display: flex;
     flex-direction: column;
+    width: 100%;
     align-items: center;
   }
 
@@ -62,5 +63,38 @@
 
   &__text {
     //
+  }
+
+  &__indicators {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__indicator {
+    display: flex;
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+    background-color: $main-title-color;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &__toggle[value="button-1"]:checked ~ .reviews-slider__indicators label[for="button-1"],
+  &__toggle[value="button-2"]:checked ~ .reviews-slider__indicators label[for="button-2"],
+  &__toggle[value="button-3"]:checked ~ .reviews-slider__indicators label[for="button-3"] {
+    background-color: $main-active-color;
+  }
+
+  &__toggle[value="button-1"]:checked ~ .reviews-slider__list {
+    transform: translateX(0);
+  }
+
+  &__toggle[value="button-2"]:checked ~ .reviews-slider__list {
+    transform: translateX(-33.33%);
+  }
+
+  &__toggle[value="button-3"]:checked ~ .reviews-slider__list {
+    transform: translateX(-66.66%);
   }
 }
