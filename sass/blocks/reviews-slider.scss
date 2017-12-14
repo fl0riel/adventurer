@@ -1,7 +1,7 @@
 @import "../variables.scss";
 
 .reviews-slider {
-  overflow: hidden;
+  margin-bottom: 90px;
 
   &__item {
     display: flex;
@@ -74,7 +74,7 @@
     display: flex;
     width: 13px;
     height: 13px;
-    margin-right: 5px;
+    margin-right: 8px;
     background-color: $main-title-color;
     border-radius: 50%;
     cursor: pointer;
